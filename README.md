@@ -385,6 +385,7 @@ stf.doTask();
 
 constructor Reference
 _ClassName_::_new_
+
 ```java
 
 Provider provider=Student::new;
@@ -392,8 +393,7 @@ provider.getStudent();
 Provider provider1=Student::new;
 provider.getStudent();
 
-````
-
+```
 
 ## Streams
 
@@ -413,7 +413,7 @@ stringCollection.add("bbb3");
 stringCollection.add("ccc");
 stringCollection.add("bbb2");
 stringCollection.add("ddd1");
-````
+```
 
 Collections in Java 8 are extended so you can simply create streams either by calling `Collection.stream()` or `Collection.parallelStream()`. The following sections explain the most common stream operations.
 
@@ -826,21 +826,3 @@ Furthermore the usage of annotations in Java 8 is expanded to two new targets:
 @Target({ElementType.TYPE_PARAMETER, ElementType.TYPE_USE})
 @interface MyAnnotation {}
 ```
-
-## Where to go from here?
-
-My programming guide to Java 8 ends here. If you want to learn more about all the new classes and features of the JDK 8 API, check out my [JDK8 API Explorer](http://winterbe.com/projects/java8-explorer/). It helps you figuring out all the new classes and hidden gems of JDK 8, like `Arrays.parallelSort`, `StampedLock` and `CompletableFuture` - just to name a few.
-
-I've also published a bunch of follow-up articles on my [blog](http://winterbe.com) that might be interesting to you:
-
-- [Java 8 Stream Tutorial](http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/)
-- [Java 8 Nashorn Tutorial](http://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/)
-- [Java 8 Concurrency Tutorial: Threads and Executors](http://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/)
-- [Java 8 Concurrency Tutorial: Synchronization and Locks](http://winterbe.com/posts/2015/04/30/java8-concurrency-tutorial-synchronized-locks-examples/)
-- [Java 8 Concurrency Tutorial: Atomic Variables and ConcurrentMap](http://winterbe.com/posts/2015/05/22/java8-concurrency-tutorial-atomic-concurrent-map-examples/)
-- [Java 8 API by Example: Strings, Numbers, Math and Files](http://winterbe.com/posts/2015/03/25/java8-examples-string-number-math-files/)
-- [Avoid Null Checks in Java 8](http://winterbe.com/posts/2015/03/15/avoid-null-checks-in-java/)
-- [Fixing Java 8 Stream Gotchas with IntelliJ IDEA](http://winterbe.com/posts/2015/03/05/fixing-java-8-stream-gotchas-with-intellij-idea/)
-- [Using Backbone.js with Java 8 Nashorn](http://winterbe.com/posts/2014/04/07/using-backbonejs-with-nashorn/)
-
-You should [follow me on Twitter](https://twitter.com/winterbe_). Thanks for reading!
